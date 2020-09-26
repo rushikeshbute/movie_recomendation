@@ -11,7 +11,7 @@ from sklearn.metrics.pairwise import cosine_similarity
 
 
 # import the movie dataset
-movie = pd.read_csv('/content/drive/My Drive/Colab Notebooks/movies_data.csv')
+movie = pd.read_csv('movies_data.csv')
 movie['index']=movie.index
 
 
@@ -90,7 +90,7 @@ cosine_sim_df.shape
 
 
 # import user rating dataset
-rating_df = pd.read_csv('/content/drive/My Drive/Colab Notebooks/ratings.csv')
+rating_df = pd.read_csv('ratings.csv')
 
 # making null dataframe
 rating_predicted=pd.DataFrame(data= None ,index= cosine_sim_df.index)
